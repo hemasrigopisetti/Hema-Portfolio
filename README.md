@@ -2,7 +2,7 @@
 
 A sleek, dark-themed personal portfolio website built with pure **HTML5, CSS3, and JavaScript**. Features animated particles, smooth scroll reveals, typing effects, and a fully responsive design.
 
-🔗 **Live Demo:** [hemasrigopisetti.github.io/My-Portfolio](https://hemasrigopisetti.github.io/My-Portfolio)
+🔗 **Live Demo:** [hemasrigopisetti.github.io/Hema-Portfolio](https://hemasrigopisetti.github.io/Hema-Portfolio/)
 
 ---
 
