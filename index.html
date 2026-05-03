@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hemasri Gopisetti | Full Stack Developer</title>
+  <meta name="description" content="Hemasri Gopisetti – Full Stack Developer & AI/ML Enthusiast. Portfolio showcasing projects, skills, and experience." />
+  <meta name="author" content="Hemasri Gopisetti" />
+
+  <!-- Open Graph (for LinkedIn/social sharing) -->
+  <meta property="og:title" content="Hemasri Gopisetti | Full Stack Developer" />
+  <meta property="og:description" content="Full Stack Developer with a strong foundation in AI and Machine Learning." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hemasrigopisetti.github.io/My-Portfolio" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-name">H<span>emasri</span></div>
+  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+</div>
+
+<!-- DOT NAV -->
+<div class="dot-nav">
+  <a href="#hero" data-label="Home"></a>
+  <a href="#about" data-label="About"></a>
+  <a href="#skills" data-label="Skills"></a>
+  <a href="#projects" data-label="Projects"></a>
+  <a href="#experience" data-label="Experience"></a>
+  <a href="#certifications" data-label="Certs"></a>
+  <a href="#education" data-label="Education"></a>
+  <a href="#contact" data-label="Contact"></a>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-logo">H<span>emasri.</span></div>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#hero" onclick="closeMenu()">Home</a>
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#skills" onclick="closeMenu()">Skills</a>
+  <a href="#projects" onclick="closeMenu()">Projects</a>
+  <a href="#experience" onclick="closeMenu()">Experience</a>
+  <a href="#certifications" onclick="closeMenu()">Certifications</a>
+  <a href="#education" onclick="closeMenu()">Education</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-line"></div>
+  <div class="hero-content">
+    <div class="hero-greeting">👋 Hello, World!</div>
+    <h1 class="hero-name">
+      <span style="display:block;font-family:'DM Sans',sans-serif;font-size:clamp(0.9rem,1.8vw,1.15rem);font-weight:300;letter-spacing:0.22em;color:var(--text2);text-transform:uppercase;margin-bottom:10px;font-style:normal;">I am</span>
+      <span class="first">Hemasri</span>
+      <span class="last">Gopisetti</span>
+    </h1>
+    <div class="hero-role"><span id="typed-text"></span><span class="typed-cursor"></span></div>
+    <p class="hero-desc">Full Stack Developer with a strong foundation in AI and Machine Learning, focused on building intelligent and scalable web applications. Passionate about solving real-world problems through clean code, innovation, and continuous learning.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-gold">Hire Me</a>
+      <a href="https://github.com/hemasrigopisetti" target="_blank" class="btn-ghost"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+  </div>
+  <div class="hero-image-wrap">
+    <div class="hero-img-inner">
+      <img src="assets/images/profile.jpg" alt="Hemasri Gopisetti" />
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="h-stat-num">4+</div>
+        <div class="h-stat-lbl">Projects</div>
+      </div>
+      <div>
+        <div class="h-stat-num">4</div>
+        <div class="h-stat-lbl">Internships</div>
+      </div>
+      <div>
+        <div class="h-stat-num">8.84</div>
+        <div class="h-stat-lbl">CGPA</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="sec-label">Get to know me</div>
+  <h2 class="sec-title">About <em>Me</em></h2>
+  <div class="sec-divider"></div>
+  <div class="about-grid">
+    <div class="about-img-wrap reveal">
+      <img src="assets/images/about.jpg" alt="About Hemasri" />
+    </div>
+    <div class="about-text">
+      <p>👩‍💻 <span class="hl">Full Stack Developer &amp; AI/ML Enthusiast</span></p>
+      <p>Hey! I'm a B.Tech graduate in Computer Science (AI &amp; ML) with a proven track record of building impactful, real-world technology solutions. I specialize in <span class="hl">Full Stack Development</span> and enjoy creating scalable, user-friendly web applications that make a difference.</p>
+      <p>Alongside web development, I have deep hands-on experience in <span class="hl">Artificial Intelligence and Machine Learning</span> — from building CNN-based deep learning models for medical imaging to integrating them into production Flask applications. I am a problem-solver at heart, always eager to learn and explore new technologies.</p>
+      <p>With internships at <span class="hl">CODTECH IT Solutions</span>, <span class="hl">SkillDzire</span>, and <span class="hl">Huebits Tech Pvt. Ltd.</span>, I've gained real-world exposure across the full development lifecycle.</p>
+      <div class="about-tags">
+        <span class="tag">Python</span><span class="tag">Deep Learning</span><span class="tag">Flask</span>
+        <span class="tag">JavaScript</span><span class="tag">TensorFlow</span><span class="tag">PyTorch</span>
+        <span class="tag">SQL</span><span class="tag">MongoDB</span>
+      </div>
+      <div class="about-stats">
+        <div><div class="about-stat-num">4+</div><div class="about-stat-lbl">Projects Built</div></div>
+        <div><div class="about-stat-num">4</div><div class="about-stat-lbl">Internships Done</div></div>
+        <div><div class="about-stat-num">5+</div><div class="about-stat-lbl">Certifications</div></div>
+        <div><div class="about-stat-num">8.84</div><div class="about-stat-lbl">CGPA</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="sec-label">What I use</div>
+  <h2 class="sec-title">My <em>Skills</em></h2>
+  <div class="sec-divider"></div>
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <div class="skill-card-title"><i class="fas fa-code"></i> Languages</div>
+      <div class="skill-pills"><span class="skill-pill">Python</span><span class="skill-pill">Java</span><span class="skill-pill">C</span><span class="skill-pill">JavaScript</span></div>
+    </div>
+    <div class="skill-card reveal reveal-delay-1">
+      <div class="skill-card-title"><i class="fas fa-globe"></i> Web Technologies</div>
+      <div class="skill-pills"><span class="skill-pill">HTML5</span><span class="skill-pill">CSS3</span><span class="skill-pill">Bootstrap</span><span class="skill-pill">JavaScript</span><span class="skill-pill">Flask</span><span class="skill-pill">React</span><span class="skill-pill">Node.js</span></div>
+    </div>
+    <div class="skill-card reveal reveal-delay-2">
+      <div class="skill-card-title"><i class="fas fa-database"></i> Databases</div>
+      <div class="skill-pills"><span class="skill-pill">SQL</span><span class="skill-pill">MySQL</span><span class="skill-pill">MongoDB</span><span class="skill-pill">DBMS</span></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-card-title"><i class="fas fa-brain"></i> AI / ML</div>
+      <div class="skill-pills"><span class="skill-pill">TensorFlow</span><span class="skill-pill">PyTorch</span><span class="skill-pill">Pandas</span><span class="skill-pill">NumPy</span><span class="skill-pill">OpenCV</span><span class="skill-pill">CNN</span><span class="skill-pill">Deep Learning</span></div>
+    </div>
+    <div class="skill-card reveal reveal-delay-1">
+      <div class="skill-card-title"><i class="fas fa-tools"></i> Tools &amp; Platforms</div>
+      <div class="skill-pills"><span class="skill-pill">Git</span><span class="skill-pill">GitHub</span><span class="skill-pill">VS Code</span><span class="skill-pill">Google Colab</span><span class="skill-pill">Canva</span><span class="skill-pill">ChatGPT</span><span class="skill-pill">Gemini</span></div>
+    </div>
+    <div class="skill-card reveal reveal-delay-2">
+      <div class="skill-card-title"><i class="fas fa-user-check"></i> Soft Skills</div>
+      <div class="skill-pills"><span class="skill-pill">Adaptability</span><span class="skill-pill">Problem Solving</span><span class="skill-pill">Time Management</span><span class="skill-pill">Team Collaboration</span><span class="skill-pill">Self-Motivated</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="sec-label">Things I've built</div>
+  <h2 class="sec-title">My <em>Projects</em></h2>
+  <div class="sec-divider"></div>
+  <div class="projects-grid">
+    <div class="project-card reveal">
+      <div class="project-icon">👁️</div>
+      <div class="project-title">Diabetic Retinopathy Detection using Deep Learning</div>
+      <div class="project-accuracy"><i class="fas fa-chart-line"></i> 98% Model Accuracy</div>
+      <p class="project-desc">A CNN-based deep learning system that classifies diabetic retinopathy from retinal fundus images into <strong>5 severity levels</strong> using the APTOS 2019 dataset. Integrated into a Flask web app for real-time prediction.</p>
+      <div class="project-tags"><span class="project-tag">Python</span><span class="project-tag">TensorFlow</span><span class="project-tag">PyTorch</span><span class="project-tag">CNN</span><span class="project-tag">OpenCV</span><span class="project-tag">Flask</span></div>
+      <div class="project-links">
+        <a href="https://github.com/hemasrigopisetti/Diabetic-Retinopathy-Detection-using-Deep-Learning" target="_blank" class="project-link github"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-1">
+      <div class="project-icon">🧩</div>
+      <div class="project-title">Sudoku Solver</div>
+      <p class="project-desc">A Python-based Sudoku solver using the <strong>backtracking algorithm</strong> with recursive depth-first search. Implements constraint propagation and input validation to handle edge cases gracefully.</p>
+      <div class="project-tags"><span class="project-tag">Python</span><span class="project-tag">Backtracking</span><span class="project-tag">DFS</span><span class="project-tag">Algorithms</span></div>
+      <div class="project-links">
+        <a href="https://github.com/hemasrigopisetti/Sudoku-Solver" target="_blank" class="project-link github"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-2">
+      <div class="project-icon">🌐</div>
+      <div class="project-title">Personal Portfolio Website</div>
+      <p class="project-desc">Designed and deployed a <strong>fully responsive portfolio website</strong> showcasing projects, skills, and certifications with smooth animations and a mobile-first layout. Hosted on GitHub Pages.</p>
+      <div class="project-tags"><span class="project-tag">HTML5</span><span class="project-tag">CSS3</span><span class="project-tag">JavaScript</span><span class="project-tag">Bootstrap</span><span class="project-tag">GitHub Pages</span></div>
+      <div class="project-links">
+        <a href="https://hemasrigopisetti.github.io/My-Portfolio" target="_blank" class="project-link github"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://hemasrigopisetti.github.io/My-Portfolio" target="_blank" class="project-link demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-3">
+      <div class="project-icon">📧</div>
+      <div class="project-title">Email Spam Prediction Using ML</div>
+      <p class="project-desc">A machine learning model that classifies emails as <strong>spam or ham</strong> using NLP techniques. Implements feature extraction, text preprocessing, and trained classification algorithms for high accuracy.</p>
+      <div class="project-tags"><span class="project-tag">Python</span><span class="project-tag">Machine Learning</span><span class="project-tag">NLP</span><span class="project-tag">Scikit-learn</span><span class="project-tag">Pandas</span></div>
+      <div class="project-links">
+        <a href="https://github.com/hemasrigopisetti/Email-Spam-Prediction-Using-ML" target="_blank" class="project-link github"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="sec-label">Where I've worked</div>
+  <h2 class="sec-title">Internship <em>Experience</em></h2>
+  <div class="sec-divider"></div>
+  <div class="exp-timeline">
+    <div class="exp-item reveal">
+      <div class="exp-header">
+        <div><div class="exp-role">Deep Learning Intern</div><div class="exp-company">Huebits Tech Pvt. Ltd.</div></div>
+        <div class="exp-date">Jan – Mar 2026 | Remote</div>
+      </div>
+      <div class="exp-badge">🧠 AI / Deep Learning</div>
+      <ul class="exp-points">
+        <li>Designed a deep learning model using CNN techniques to classify retinal images into multiple severity levels for diabetic retinopathy detection.</li>
+        <li>Worked with TensorFlow and PyTorch to train and fine-tune models achieving <strong>98% accuracy</strong> on the APTOS 2019 dataset.</li>
+        <li>Integrated the trained model into a Flask-based web application for real-time image upload and automated predictions.</li>
+      </ul>
+      <a href="https://drive.google.com/file/d/1JO0GjvkEFSDH_LDaDIi6xQ9x4S5k0tWG/view?usp=sharing" target="_blank" class="exp-cert-link"><i class="fas fa-certificate"></i> View Certificate</a>
+    </div>
+    <div class="exp-item reveal">
+      <div class="exp-header">
+        <div><div class="exp-role">Full Stack Web Development Intern</div><div class="exp-company">CODTECH IT Solutions</div></div>
+        <div class="exp-date">June – July 2025 | Remote</div>
+      </div>
+      <div class="exp-badge">💻 Full Stack Development</div>
+      <ul class="exp-points">
+        <li>Developed responsive web pages using HTML5, CSS3, and JavaScript, applying front-end best practices and cross-browser compatibility standards.</li>
+        <li>Worked on mini full-stack projects, gaining hands-on exposure to end-to-end web development workflows and UI design principles.</li>
+      </ul>
+      <a href="https://drive.google.com/file/d/1fgMvd_iVRcqXZEEr0l5XCG6FzirHfRrr/view?usp=sharing" target="_blank" class="exp-cert-link"><i class="fas fa-certificate"></i> View Certificate</a>
+    </div>
+    <div class="exp-item reveal">
+      <div class="exp-header">
+        <div><div class="exp-role">Python Programming Intern</div><div class="exp-company">SkillDzire</div></div>
+        <div class="exp-date">May – June 2025 | Remote</div>
+      </div>
+      <div class="exp-badge">🐍 Python Programming</div>
+      <ul class="exp-points">
+        <li>Strengthened core Python skills including data structures, OOP, and file handling through structured assignments and real-world mini projects.</li>
+        <li>Built practical Python applications that reinforced logical thinking, clean code practices, and efficient problem-solving techniques.</li>
+      </ul>
+      <a href="https://drive.google.com/file/d/1wnn_kxyszRQMx80UaOxB5COwDCctXtRE/view?usp=sharing" target="_blank" class="exp-cert-link"><i class="fas fa-certificate"></i> View Certificate</a>
+    </div>
+    <div class="exp-item reveal">
+      <div class="exp-header">
+        <div><div class="exp-role">Machine Learning Intern</div><div class="exp-company">SkillDzire</div></div>
+        <div class="exp-date">July – August 2024 | Remote</div>
+      </div>
+      <div class="exp-badge">🤖 Machine Learning</div>
+      <ul class="exp-points">
+        <li>Learned fundamental ML algorithms including Linear Regression, Decision Trees, and classification models through structured assignments.</li>
+        <li>Worked on mini projects using Python and real-world datasets, applying data preprocessing and model evaluation techniques.</li>
+      </ul>
+      <a href="https://drive.google.com/file/d/1Ay1XOnmJnXH3feFxgYW48b3aDJGZQA24/view?usp=sharing" target="_blank" class="exp-cert-link"><i class="fas fa-certificate"></i> View Certificate</a>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="sec-label">My Achievements</div>
+  <h2 class="sec-title">My <em>Certifications</em></h2>
+  <div class="sec-divider"></div>
+  <div class="certs-grid">
+    <div class="cert-card reveal">
+      <div class="cert-icon-wrap">🎓</div>
+      <div class="cert-body">
+        <div class="cert-title">AI: Knowledge Representation &amp; Reasoning</div>
+        <div class="cert-issuer">NPTEL – IIT Madras</div>
+        <div class="cert-date">Jan – Apr 2025</div>
+        <div class="cert-badge">NPTEL Elite</div>
+        <a href="https://drive.google.com/file/d/1toRau-auDCVvfU7FmjLy95tEISI3NO1p/view?usp=sharing" target="_blank" class="cert-link"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+      </div>
+    </div>
+    <div class="cert-card reveal reveal-delay-1">
+      <div class="cert-icon-wrap">💻</div>
+      <div class="cert-body">
+        <div class="cert-title">DotNet Full Stack Development</div>
+        <div class="cert-issuer">Wipro TalentNext</div>
+        <div class="cert-date">2025</div>
+        <div class="cert-badge">Wipro Certified</div>
+        <a href="https://drive.google.com/file/d/19OyyjYPRfexsU6Sq_5JFz_L6QeE-jx9-/view?usp=sharing" target="_blank" class="cert-link"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+      </div>
+    </div>
+    <div class="cert-card reveal reveal-delay-2">
+      <div class="cert-icon-wrap">🍃</div>
+      <div class="cert-body">
+        <div class="cert-title">MongoDB Developer Certification</div>
+        <div class="cert-issuer">Infosys Springboard</div>
+        <div class="cert-date">Aug 2024</div>
+        <div class="cert-badge">MongoDB</div>
+        <a href="https://drive.google.com/file/d/1LqJsdq7FdJu9oujeY8qd-MZY3iH_r0qK/view?usp=sharing" target="_blank" class="cert-link"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+      </div>
+    </div>
+    <div class="cert-card reveal reveal-delay-3">
+      <div class="cert-icon-wrap">👁️</div>
+      <div class="cert-body">
+        <div class="cert-title">OpenCV Bootcamp</div>
+        <div class="cert-issuer">OpenCV University</div>
+        <div class="cert-date">Sep 2024</div>
+        <div class="cert-badge">Grade: 100% 🏆</div>
+        <a href="https://drive.google.com/file/d/1-On15sIwuOoiF4MCRsHHkrw7y5rPbRKN/view?usp=sharing" target="_blank" class="cert-link"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+      </div>
+    </div>
+    <div class="cert-card reveal">
+      <div class="cert-icon-wrap">🤖</div>
+      <div class="cert-body">
+        <div class="cert-title">Google AI &amp; ML Program</div>
+        <div class="cert-issuer">EduSkills</div>
+        <div class="cert-date">2024</div>
+        <div class="cert-badge">Google</div>
+        <a href="https://drive.google.com/file/d/1VE4g8-vwakQ_OONRF4FJfyVPoXaqBkEw/view?usp=sharing" target="_blank" class="cert-link"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="sec-label">My Academic Journey</div>
+  <h2 class="sec-title">My <em>Education</em></h2>
+  <div class="sec-divider"></div>
+  <div class="edu-grid">
+    <div class="edu-card reveal">
+      <div class="edu-year">2022 – 2026</div>
+      <div class="edu-icon">🎓</div>
+      <div class="edu-degree">B.Tech – CSM (CSE-AIML)</div>
+      <div class="edu-institution">Sasi Institute of Technology &amp; Engineering, Tadepalligudem</div>
+      <div class="edu-score">8.84 <span style="font-size:1rem;font-weight:300">CGPA</span></div>
+      <div class="edu-score-label">Academic Performance</div>
+    </div>
+    <div class="edu-card reveal reveal-delay-1">
+      <div class="edu-year">2020 – 2022</div>
+      <div class="edu-icon">📚</div>
+      <div class="edu-degree">Intermediate – MPC</div>
+      <div class="edu-institution">Syamala Junior College, Tadepalligudem</div>
+      <div class="edu-score">90%</div>
+      <div class="edu-score-label">Academic Performance</div>
+    </div>
+    <div class="edu-card reveal reveal-delay-2">
+      <div class="edu-year">2019 – 2020</div>
+      <div class="edu-icon">🏫</div>
+      <div class="edu-degree">SSC – Secondary School</div>
+      <div class="edu-institution">Z.P. High School, Bommidi</div>
+      <div class="edu-score">92%</div>
+      <div class="edu-score-label">Academic Performance</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="sec-label">Let's Connect</div>
+  <h2 class="sec-title">Get In <em>Touch</em></h2>
+  <div class="sec-divider"></div>
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <h3>Contact Info</h3>
+      <div class="contact-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><a href="mailto:gopisettihemu@gmail.com">gopisettihemu@gmail.com</a></div>
+      <div class="contact-item"><div class="contact-icon"><i class="fas fa-phone"></i></div><span>+91 7386873779</span></div>
+      <div class="contact-item"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><span>Tadepalligudem, Andhra Pradesh, India</span></div>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/hemasri-gopisetti-47a757280" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/hemasrigopisetti" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+        <a href="https://hemasrigopisetti.github.io/My-Portfolio" target="_blank" class="social-link"><i class="fas fa-globe"></i></a>
+      </div>
+    </div>
+    <div class="contact-form reveal reveal-delay-2">
+      <div class="form-group"><label>Your Name</label><input type="text" placeholder="Enter your name" /></div>
+      <div class="form-group"><label>Your Email</label><input type="email" placeholder="Enter your email" /></div>
+      <div class="form-group"><label>Message</label><textarea placeholder="Write your message here..."></textarea></div>
+      <button class="btn-gold" onclick="handleSend()" style="border:none;cursor:pointer;font-family:inherit">Send Message &nbsp;<i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+</section>
+
+<footer>Designed &amp; Built with ❤️ by <span>Hemasri Gopisetti</span> © 2025</footer>
+
+<!-- Scripts -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>
